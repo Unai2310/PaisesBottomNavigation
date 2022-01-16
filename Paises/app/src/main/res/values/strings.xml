@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Paises</string>
+    <string name="action_settings">Configuracion</string>
+    <string name="acerca_de">Acerca de</string>
+    <string name="texto_acerca_de">
+        Aplicación creada por Unai.
+        Esta aplicación muestra una lista de paises y su detalle correspondiente, junto con una foto
+    </string>
+    <string name="vista">Apariencia</string>
+    <string name="mostrar">Mostrar linea de separación entre elementos y listado</string>
+    <string name="formato"> Formato del listado</string>
+    <string name="quiz">!Juega¡</string>
+    <string name="label_quiz">Juego de banderas</string>
+    <string name="pregunta_quiz">¿De donde es esta bandera?</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

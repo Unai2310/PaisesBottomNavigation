@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/paisFragment">
+    <fragment
+        android:id="@+id/paisFragment"
+        android:name="com.uar.paises.PaisFragment"
+        android:label="@string/selecciona_pais"
+        tools:layout="@layout/fragment_item_list" >
+        <action
+            android:id="@+id/action_paisFragment_to_detallesPaisFragment"
+            app:destination="@id/detallesPaisFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/detallesPaisFragment"
+        android:name="com.uar.paises.DetallesPaisFragment"
+        android:label="{title}"
+        tools:layout="@layout/fragment_detalles_pais" >
+        <action
+            android:id="@+id/action_detallesPaisFragment_to_paisFragment"
+            app:destination="@id/paisFragment" />
+    </fragment>
+        <argument
+            android:name="title"
+            app:argType="string"/>
+    <fragment
+        android:id="@+id/acercaDeFragment"
+        android:name="com.uar.paises.AcercaDeFragment"
+        android:label="@string/acerca_de"
+        tools:layout="@layout/fragment_acerca_de" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.uar.paises.SettingsFragment"
+        android:label="Configuracion" />
+    <fragment
+        android:id="@+id/preguntasBanderas"
+        android:name="com.uar.paises.PreguntasBanderas"
+        android:label="@string/label_quiz"
+        tools:layout="@layout/fragment_preguntas_banderas" />
+</navigation>
